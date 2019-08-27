@@ -1,22 +1,22 @@
-# Programa para aplicar un fondo de escritorio
+# Program to set a wallpaper at the start of the system
 nitrogen --restore &
-# Programa para descargar automaticamente imagenes de Internet
+# Programa to download images automatically every minute, hour, etc
 #variety &
-# Programa para bloquear el portatil/ordenador
+# Program to lock our desktop
 #xscreensaver -nosplash &
-# Programa para bindear teclas
+# Program to bind keys
 #xbindkeys &
-# Icono que se aniade en trayer para bajar, silencias y subir el volumen con alsamixer
+# Volume icon for manage the volume level
 volumeicon &
-# Programa para administrar la red
+# Program to administrate the network
 nm-applet &
-# Cambiamos el idioma del teclado a estadounidense internacional
+# Command to set the keyboard map to us intl
 setxkbmap us intl &
-# Programa para actualizar e instalar paquetes con pacman
+# Program to install and update the system graphically
 pamac-tray &
-# Importar pantalla para que funcione el dunst
+# Import the display (this command is essential for the work of dunst)
 systemctl --user import-environment DISPLAY &
-# Iniciar el servicio dunst (notifier)
+# Start dunst service (notifier)
 systemctl start --user dunst.service &
 
 dte(){
